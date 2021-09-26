@@ -32,4 +32,4 @@ if len(lessons) == 0:
 start = min(e['startTime'] for e in lessons)
 
 with open('alarm_start.txt', 'w') as f:
-    f.write(start)
+    f.write(f'{tomorrow_string} {start}')
