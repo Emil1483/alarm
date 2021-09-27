@@ -6,28 +6,20 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 
-import json
+from datetime import datetime, timedelta
 
+import json
 import login_data
 
-def process_browser_logs_for_network_events(logs):
-    for entry in logs:
-        log = json.loads(entry["message"])["message"]
-        if (
-            "Network.response" in log["method"]
-            or "Network.request" in log["method"]
-            or "Network.webSocket" in log["method"]
-        ):
-            yield log
+school_url = 'https://valler-vgs.inschool.visma.no'
 
-def get_nested_value(json, *keys):
-    if keys[0] not in json: return None
-    if len(keys) == 1: return json[keys[0]]
-    return get_nested_value(json[keys[0]], *keys[1:])
+tomorrow = datetime.now() + timedelta(days=1)
+tomorrow_string = tomorrow.strftime('%d/%m/%Y')
 
-def get_visma_cookie():
+def get_visma_lessons():
     capabilities = DesiredCapabilities.CHROME
-    capabilities["goog:loggingPrefs"] = {"performance": "ALL"}  # chromedriver 75+
+    capabilities["goog:loggingPrefs"] = {
+        "performance": "ALL"}  # chromedriver 75+
 
     options = Options()
     options.add_argument('--headless')
@@ -40,9 +32,10 @@ def get_visma_cookie():
     )
 
     def wait_for_element_with_id(id):
-        WebDriverWait(driver, 3).until(EC.presence_of_element_located((By.ID, id)))
+        WebDriverWait(driver, 3).until(
+            EC.presence_of_element_located((By.ID, id)))
 
-    driver.get('https://valler-vgs.inschool.visma.no')
+    driver.get(school_url)
 
     wait_for_element_with_id('login-with-feide-button')
 
@@ -55,18 +48,15 @@ def get_visma_cookie():
 
     driver.find_element_by_name('f').submit()
 
-    logs = driver.get_log('performance')
-    driver.quit()
-    events = [*process_browser_logs_for_network_events(logs)]
+    wait_for_element_with_id('RightContentPanel')
 
-    for event in events:
-        cookie = get_nested_value(event, 'params', 'headers', 'cookie')
+    url = f'{school_url}/control/timetablev2/learner/{login_data.learnerId}/fetch/ALL/0/current?forWeek={tomorrow_string}'
 
-        if cookie is None: continue
+    driver.get(url)
 
-        if 'Authorization=' not in cookie: continue
+    content = driver.page_source[84 : -20]
 
-        return cookie
+    return json.loads(content)
 
 if __name__ == '__main__':
-    print(get_visma_cookie())
+    print(get_visma_lessons())

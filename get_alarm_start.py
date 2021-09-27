@@ -1,24 +1,8 @@
 from datetime import datetime, timedelta
-from get_visma_cookie import get_visma_cookie
+from get_visma_lessons import get_visma_lessons, tomorrow_string
 import requests
 
-url = 'https://valler-vgs.inschool.visma.no/control/timetablev2/learner/7191143/fetch/ALL/0/current'
-
-tomorrow = datetime.now() + timedelta(days=1)
-tomorrow_string = tomorrow.strftime('%d/%m/%Y')
-
-params = {
-    'forWeek': tomorrow_string,
-    'extra-info': True,
-    'types':
-    'LESSON,EVENT,ACTIVITY,SUBSTITUTION',
-    '_': tomorrow.timestamp()
-}
-
-headers = {'cookie': get_visma_cookie()}
-
-response = requests.get(url, params=params, headers=headers)
-json = response.json()
+json = get_visma_lessons()
 
 timetableItems = json['timetableItems']
 
@@ -32,4 +16,8 @@ if len(lessons) == 0:
 start = min(e['startTime'] for e in lessons)
 
 with open('alarm_start.txt', 'w') as f:
-    f.write(f'{tomorrow_string} {start}')
+    result = f'{tomorrow_string} {start}'
+
+    print(f'alarm will sound at {result}')
+
+    f.write(result)
