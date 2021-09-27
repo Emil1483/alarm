@@ -1,4 +1,5 @@
 from datetime import datetime, timedelta
+from get_visma_cookie import get_visma_cookie
 import requests
 
 url = 'https://valler-vgs.inschool.visma.no/control/timetablev2/learner/7191143/fetch/ALL/0/current'
@@ -14,8 +15,7 @@ params = {
     '_': tomorrow.timestamp()
 }
 
-with open('cookie.txt') as f:
-    headers = {'cookie': f.read()}
+headers = {'cookie': get_visma_cookie()}
 
 response = requests.get(url, params=params, headers=headers)
 json = response.json()
