@@ -34,7 +34,8 @@ def get_visma_cookie():
     options.add_argument('--disable-gpu')
 
     driver = webdriver.Chrome(
-        ChromeDriverManager().install(),
+        '/usr/lib/chromium-browser/chromedriver',
+        #ChromeDriverManager().install(),
         desired_capabilities=capabilities,
         options=options
     )
@@ -60,11 +61,13 @@ def get_visma_cookie():
     events = [*process_browser_logs_for_network_events(logs)]
 
     for event in events:
-        cookie = get_nested_value(event, 'params', 'headers', 'cookie')
+        cookie = str(get_nested_value(event, 'params'))
 
         if cookie is None: continue
 
         if 'Authorization=' not in cookie: continue
+
+        print(cookie)
 
         return cookie
 
