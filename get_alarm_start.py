@@ -18,6 +18,6 @@ start = min(e['startTime'] for e in lessons)
 with open('alarm_start.txt', 'w') as f:
     result = f'{tomorrow_string} {start}'
 
-    print(f'alarm will sound at {result}')
+    print(f'school starts at {result}')
 
     f.write(result)
