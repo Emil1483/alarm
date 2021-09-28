@@ -1,23 +1,28 @@
-from datetime import datetime, timedelta
-from get_visma_lessons import get_visma_lessons, tomorrow_string
-import requests
+try:
 
-json = get_visma_lessons()
+    from datetime import datetime, timedelta
+    from get_visma_lessons import get_visma_lessons, tomorrow_string
+    import requests
 
-timetableItems = json['timetableItems']
+    json = get_visma_lessons()
 
-lessons = [e for e in timetableItems if e['date'] == tomorrow_string]
+    timetableItems = json['timetableItems']
 
-if len(lessons) == 0:
+    lessons = [e for e in timetableItems if e['date'] == tomorrow_string]
+
+    if len(lessons) == 0:
+        with open('alarm_start.txt', 'w') as f:
+            f.write('')
+        quit()
+
+    start = min(e['startTime'] for e in lessons)
+
     with open('alarm_start.txt', 'w') as f:
-        f.write('')
-    quit()
+        result = f'{tomorrow_string} {start}'
 
-start = min(e['startTime'] for e in lessons)
+        print(f'school starts at {result}')
 
-with open('alarm_start.txt', 'w') as f:
-    result = f'{tomorrow_string} {start}'
+        f.write(result)
 
-    print(f'school starts at {result}')
-
-    f.write(result)
+except Exception as e:
+    print(e)

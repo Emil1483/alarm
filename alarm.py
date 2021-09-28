@@ -12,10 +12,11 @@ try:
     with open('alarm_start.txt', 'r') as f:
         time_string = f.read().strip()
         time = datetime.strptime(time_string, '%d/%m/%Y %H:%M')
-        duration = time - datetime.now() - timedelta(minutes=30)
+
+        duration = time - datetime.now() - timedelta(minutes=40)
 
         if duration > timedelta(hours=12):
-            print(f'next alarm at {time} is too long to wait. Aborting')
+            print(f'Next alarm at {time} is too long to wait. Aborting')
             GPIO.cleanup()
             quit()
 
@@ -24,7 +25,7 @@ try:
         sleep(duration.total_seconds())
 
     curr = sensor()
-    alarm_until(lambda : sensor() != curr)
+    alarm_until(lambda i : sensor() != curr)
 
     GPIO.cleanup()
 

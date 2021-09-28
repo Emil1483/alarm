@@ -13,7 +13,9 @@ GPIO.setup(pin, GPIO.OUT)
 p = GPIO.PWM(pin, 50)
 
 def alarm_until(should_stop):
-    while not should_stop():
+    i = 0
+    while not should_stop(i):
+        i += 1
         p.start(start_val)
         p.ChangeFrequency(frequency)
         sleep(duration)

@@ -32,7 +32,7 @@ def get_visma_lessons():
     )
 
     def wait_for_element_with_id(id):
-        WebDriverWait(driver, 3).until(
+        WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.ID, id)))
 
     driver.get(school_url)
