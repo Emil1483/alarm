@@ -1,0 +1,35 @@
+Alarm will fire in 3:19:58.138253
+Alarm will fire in 1:39:57.726973
+time data '' does not match format '%d/%m/%Y %H:%M'
+Alarm will fire in 5:29:58.081766
+Alarm will fire in 3:59:57.839236
+Alarm will fire in 3:29:57.628194
+time data '' does not match format '%d/%m/%Y %H:%M'
+time data '' does not match format '%d/%m/%Y %H:%M'
+time data '' does not match format '%d/%m/%Y %H:%M'
+time data '' does not match format '%d/%m/%Y %H:%M'
+time data '' does not match format '%d/%m/%Y %H:%M'
+Alarm will fire in 3:19:57.491453
+Alarm will fire in 1:39:57.451370
+Alarm will fire in -1 day, 1:39:57.542390
+sleep length must be non-negative
+Alarm will fire in 5:29:57.789049
+Alarm will fire in 1:39:57.738518
+time data '' does not match format '%d/%m/%Y %H:%M'
+time data '' does not match format '%d/%m/%Y %H:%M'
+Alarm will fire in 3:19:57.759336
+time data '' does not match format '%d/%m/%Y %H:%M'
+Alarm will fire in 5:29:57.172483
+Alarm will fire in 1:39:57.704832
+time data '' does not match format '%d/%m/%Y %H:%M'
+time data '' does not match format '%d/%m/%Y %H:%M'
+Alarm will fire in 1:39:57.716055
+Alarm will fire in -1 day, 1:39:58.053140
+sleep length must be non-negative
+Alarm will fire in 3:19:57.559844
+Alarm will fire in 5:29:57.053020
+Alarm will fire in 1:39:57.619068
+time data '' does not match format '%d/%m/%Y %H:%M'
+time data '' does not match format '%d/%m/%Y %H:%M'
+Alarm will fire in 3:19:57.681258
+Alarm will fire in 3:19:57.816316

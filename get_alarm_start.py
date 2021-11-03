@@ -3,6 +3,10 @@ try:
     from datetime import datetime, timedelta
     from get_visma_lessons import get_visma_lessons, tomorrow_string
     import requests
+    
+    from speaker import notification
+
+    notification()
 
     json = get_visma_lessons()
 

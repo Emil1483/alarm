@@ -8,27 +8,44 @@ try:
 
     from speaker import *
     from sensor import *
+    from action import *
 
-    with open('alarm_start.txt', 'r') as f:
-        time_string = f.read().strip()
-        time = datetime.strptime(time_string, '%d/%m/%Y %H:%M')
+    notification()
 
-        duration = time - datetime.now() - timedelta(minutes=40)
+    with open('school_start.txt', 'r') as f:
+        start_time_string = f.read().strip()
+        start_time = datetime.strptime(start_time_string, '%d/%m/%Y %H:%M')
+
+        start_time = datetime.now() + timedelta(minutes=51)
+        
+        duration = start_time - datetime.now()
 
         if duration > timedelta(hours=12):
             print(f'Next alarm at {time} is too long to wait. Aborting')
             GPIO.cleanup()
             quit()
 
-        print(f'Alarm will fire in {duration}')
+        print(f'School starts in {duration}')
 
-        sleep(duration.total_seconds())
+        max_duration = max(action.duration for action in actions)
 
-    curr = sensor()
-    alarm_until(lambda i : sensor() != curr)
+        sleep_time = start_time - datetime.now() - max_duration
 
-    GPIO.cleanup()
+        sleep(sleep_time.total_seconds())
+
+        curr = sensor()
+        while curr == sensor():
+            duration = start_time - datetime.now()
+            for action in actions:
+                if action.duration > duration:
+
+                    action.run()
+                    actions.remove(action)
+
+            sleep(1)
+
+    clean_up()
 
 except Exception as e:
-    GPIO.cleanup()
+    clean_up()
     print(e)
