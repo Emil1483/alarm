@@ -16,8 +16,6 @@ try:
         start_time_string = f.read().strip()
         start_time = datetime.strptime(start_time_string, '%d/%m/%Y %H:%M')
 
-        start_time = datetime.now() + timedelta(minutes=51)
-        
         duration = start_time - datetime.now()
 
         if duration > timedelta(hours=12):
