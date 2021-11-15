@@ -4,6 +4,7 @@ import pygame
 from threading import Timer
 from mutagen.mp3 import MP3
 import random
+import glob
 
 pygame.mixer.init()
 music = pygame.mixer.music
@@ -53,23 +54,21 @@ def old_alarm_stop():
         old_alarm_timer.cancel()
         old_alarm_timer.join()
 
-all_songs = [
-    'music/fix_you.mp3',
-    'music/spis.mp3',
-]
-
+all_songs = glob.glob('music/*.mp3')
 songs = all_songs.copy()
 
 alarm_on = False
 alarm_timer = None
 def alarm_start(stay_on=True):
     global alarm_timer
+    global songs
 
     if stay_on: alarm_on = True
 
     song = random.choice(songs)
     songs.remove(song)
-    songs.append(random.choice(all_songs))
+    if len(songs) == 0:
+        songs = all_songs.copy()
 
     music.load(song)
     music.play()
@@ -85,8 +84,9 @@ def alarm_stop():
         alarm_timer.cancel()
         alarm_timer.join()
 
+def set_alarm_volume(volume):
+    music.set_volume(volume)
+
 if __name__ == '__main__':
     notification()
     GPIO.cleanup()
-
-    alarm_until(lambda i: i > 20)

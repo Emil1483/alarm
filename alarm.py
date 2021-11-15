@@ -1,49 +1,56 @@
 try:
 
-    import RPi.GPIO as GPIO
     from time import sleep
     from datetime import datetime, timedelta
 
-    GPIO.setmode(GPIO.BOARD)
+    from speaker import speaker
+    from sensor import sensor
+    from action import action as a
 
-    from speaker import *
-    from sensor import *
-    from action import *
+    speaker.notification()
 
-    notification()
-
-    with open('school_start.txt', 'r') as f:
+    with open('school_start/school_start.txt', 'r') as f:
         start_time_string = f.read().strip()
         start_time = datetime.strptime(start_time_string, '%d/%m/%Y %H:%M')
+
+        #start_time = datetime.now() + timedelta(minutes=90)
 
         duration = start_time - datetime.now()
 
         if duration > timedelta(hours=12):
             print(f'Next alarm at {time} is too long to wait. Aborting')
-            GPIO.cleanup()
+            a.clean_up()
+            quit()
+
+        if duration < timedelta():
+            print('Looks like school started in the past. Aborting')
+            a.clean_up()
             quit()
 
         print(f'School starts in {duration}')
 
-        max_duration = max(action.duration for action in actions)
+        max_duration = max(action.duration for action in a.actions)
 
         sleep_time = start_time - datetime.now() - max_duration
+        sleep_time_seconds = sleep_time.total_seconds()
 
-        sleep(sleep_time.total_seconds())
+        if sleep_time_seconds > 0:
+            sleep(sleep_time_seconds)
 
-        curr = sensor()
-        while curr == sensor():
+        curr = sensor.door_sensor()
+        while curr == sensor.door_sensor():
             duration = start_time - datetime.now()
-            for action in actions:
+            for action in a.actions:
                 if action.duration > duration:
 
+                    print(f'running {action.name}')
                     action.run()
-                    actions.remove(action)
+                    a.actions.remove(action)
 
             sleep(1)
 
-    clean_up()
+    a.clean_up()
 
 except Exception as e:
-    clean_up()
+    a.clean_up()
     print(e)

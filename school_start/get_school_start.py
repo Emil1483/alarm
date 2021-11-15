@@ -4,10 +4,6 @@ try:
     from get_visma_lessons import get_visma_lessons, tomorrow_string
     import requests
     
-    from speaker import notification
-
-    notification()
-
     json = get_visma_lessons()
 
     timetableItems = json['timetableItems']
@@ -21,7 +17,7 @@ try:
 
     start = min(e['startTime'] for e in lessons)
 
-    with open('alarm_start.txt', 'w') as f:
+    with open('school_start.txt', 'w') as f:
         result = f'{tomorrow_string} {start}'
 
         print(f'school starts at {result}')
