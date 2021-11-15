@@ -2,6 +2,7 @@ try:
 
     from time import sleep
     from datetime import datetime, timedelta
+    import subprocess
 
     from speaker import speaker
     from sensor import sensor
@@ -50,6 +51,8 @@ try:
             sleep(1)
 
     a.clean_up()
+
+    subprocess.run(['sudo', 'reboot'])
 
 except Exception as e:
     a.clean_up()
