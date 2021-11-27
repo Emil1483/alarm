@@ -57,3 +57,271 @@ opening door: False hue is on: True button is on True time since last change 0:3
 hue off
 opening door: False hue is on: False button is on False time since last change 0:00:01.777292 time since last opened 0:00:05.611227 time since last button press 0:53:04.566304
 hue on
+hue off
+hue off
+opening door: False hue is on: False button is on False time since last change 4:43:47.355832 time since last opened 4:43:47.355776 time since last button press 4:43:47.355750
+hue on
+opening door: True hue is on: True button is on True time since last change 0:01:41.434828 time since last opened 4:45:28.790756 time since last button press 0:01:41.434863
+opening door: False hue is on: True button is on True time since last change 0:01:43.584825 time since last opened 0:00:02.149842 time since last button press 0:01:43.584861
+hue off
+opening door: True hue is on: False button is on False time since last change 0:00:54.726316 time since last opened 0:00:56.905248 time since last button press 0:02:38.340267
+hue on
+opening door: False hue is on: True button is on True time since last change 0:00:03.283856 time since last opened 0:00:03.312625 time since last button press 0:02:41.653042
+opening door: True hue is on: True button is on True time since last change 1:23:12.821453 time since last opened 1:23:12.850224 time since last button press 1:25:51.190644
+opening door: False hue is on: True button is on True time since last change 1:34:06.026908 time since last opened 0:10:53.205195 time since last button press 1:36:44.396098
+opening door: False hue is on: True button is on True time since last change 1:34:07.549013 time since last opened 0:10:54.727299 time since last button press 1:36:45.918203
+hue off
+opening door: False hue is on: False button is on False time since last change 0:00:01.479553 time since last opened 0:10:56.207031 time since last button press 0:00:01.479579
+hue on
+opening door: True hue is on: True button is on True time since last change 0:59:05.986547 time since last opened 1:10:02.193742 time since last button press 0:59:05.986582
+opening door: False hue is on: True button is on True time since last change 0:59:20.692380 time since last opened 0:00:14.705659 time since last button press 0:59:20.692412
+opening door: True hue is on: True button is on True time since last change 2:08:57.327953 time since last opened 1:09:51.341233 time since last button press 2:08:57.327986
+opening door: False hue is on: True button is on True time since last change 2:09:01.159963 time since last opened 0:00:03.831860 time since last button press 2:09:01.159996
+hue off
+opening door: True hue is on: False button is on False time since last change 0:02:30.888813 time since last opened 0:02:34.751690 time since last button press 2:11:32.079825
+hue on
+opening door: False hue is on: True button is on True time since last change 0:03:03.172742 time since last opened 0:03:03.199079 time since last button press 2:14:35.279038
+opening door: True hue is on: True button is on True time since last change 0:39:25.205367 time since last opened 0:39:25.231704 time since last button press 2:50:57.311663
+opening door: False hue is on: True button is on True time since last change 0:39:43.511847 time since last opened 0:00:18.306580 time since last button press 2:51:15.618396
+opening door: True hue is on: True button is on True time since last change 1:34:13.654257 time since last opened 0:54:48.448749 time since last button press 3:45:45.760556
+opening door: False hue is on: True button is on True time since last change 1:34:17.995130 time since last opened 0:00:04.340719 time since last button press 3:45:50.101426
+hue off
+opening door: True hue is on: False button is on False time since last change 1:47:23.467573 time since last opened 1:47:27.839523 time since last button press 5:33:13.600231
+hue on
+opening door: False hue is on: True button is on True time since last change 0:00:25.125887 time since last opened 0:00:25.155373 time since last button press 5:33:38.755749
+opening door: True hue is on: True button is on True time since last change 1:34:36.069407 time since last opened 1:34:36.098892 time since last button press 7:07:49.699268
+opening door: False hue is on: True button is on True time since last change 1:34:46.527751 time since last opened 0:00:10.458179 time since last button press 7:08:00.157612
+opening door: True hue is on: True button is on True time since last change 2:03:42.668392 time since last opened 0:29:06.598822 time since last button press 7:36:56.298255
+opening door: True hue is on: True button is on True time since last change 2:51:08.575018 time since last opened 0:47:25.906473 time since last button press 8:24:22.204879
+hue off
+opening door: True hue is on: False button is on False time since last change 0:00:23.802714 time since last opened 0:47:49.709383 time since last button press 0:00:23.802743
+hue on
+opening door: True hue is on: True button is on True time since last change 2:59:42.839935 time since last opened 3:47:32.549502 time since last button press 2:59:42.839986
+hue off
+opening door: True hue is on: False button is on False time since last change 0:40:45.953054 time since last opened 4:28:18.502781 time since last button press 0:40:45.953081
+hue on
+opening door: True hue is on: True button is on True time since last change 0:00:03.142207 time since last opened 4:28:21.645203 time since last button press 0:00:03.142241
+hue off
+opening door: False hue is on: False button is on False time since last change 4:22:46.339360 time since last opened 8:51:07.984782 time since last button press 4:22:46.339392
+hue on
+opening door: True hue is on: True button is on True time since last change 5:22:05.740437 time since last opened 14:13:13.756894 time since last button press 9:44:52.111505
+hue off
+opening door: False hue is on: False button is on False time since last change 1:01:41.465714 time since last opened 1:01:41.465705 time since last button press 1:01:41.465702
+hue on
+opening door: True hue is on: True button is on True time since last change 0:04:32.189030 time since last opened 1:06:13.682474 time since last button press 1:06:13.682471
+opening door: False hue is on: True button is on True time since last change 0:04:36.400508 time since last opened 0:00:04.211314 time since last button press 1:06:17.893942
+hue off
+opening door: True hue is on: False button is on False time since last change 1:55:16.946048 time since last opened 1:55:21.183841 time since last button press 3:01:34.866472
+hue on
+opening door: False hue is on: True button is on True time since last change 0:00:02.622490 time since last opened 0:00:02.655804 time since last button press 3:01:37.522430
+opening door: True hue is on: True button is on True time since last change 3:33:54.688959 time since last opened 3:33:54.722272 time since last button press 6:35:29.588898
+opening door: False hue is on: True button is on True time since last change 3:33:58.579690 time since last opened 0:00:03.890568 time since last button press 6:35:33.479630
+hue off
+opening door: False hue is on: False button is on False time since last change 0:00:02.036716 time since last opened 0:00:05.955477 time since last button press 6:35:35.544539
+hue on
+opening door: True hue is on: True button is on True time since last change 0:38:01.546269 time since last opened 0:38:07.501940 time since last button press 0:38:01.546305
+opening door: True hue is on: True button is on True time since last change 0:38:55.193140 time since last opened 0:00:53.646718 time since last button press 0:38:55.193171
+hue off
+opening door: True hue is on: False button is on False time since last change 0:00:01.406324 time since last opened 0:00:55.053241 time since last button press 0:00:01.406357
+hue on
+opening door: False hue is on: True button is on True time since last change 0:01:54.344682 time since last opened 0:02:49.398123 time since last button press 0:01:54.344712
+opening door: True hue is on: True button is on True time since last change 1:52:02.267313 time since last opened 1:52:57.320753 time since last button press 1:52:02.267341
+opening door: False hue is on: True button is on True time since last change 1:52:05.604385 time since last opened 0:00:03.336939 time since last button press 1:52:05.604417
+hue off
+opening door: True hue is on: False button is on False time since last change 0:02:23.239780 time since last opened 0:02:26.608908 time since last button press 1:54:28.876387
+hue on
+opening door: False hue is on: True button is on True time since last change 0:00:03.120010 time since last opened 0:00:03.152457 time since last button press 1:54:32.029039
+opening door: True hue is on: True button is on True time since last change 0:39:45.598994 time since last opened 0:39:45.631439 time since last button press 2:34:14.508023
+opening door: False hue is on: True button is on True time since last change 0:40:10.851056 time since last opened 0:00:25.251905 time since last button press 2:34:39.760087
+opening door: True hue is on: True button is on True time since last change 0:52:02.228976 time since last opened 0:12:16.629824 time since last button press 2:46:31.138006
+opening door: False hue is on: True button is on True time since last change 1:05:55.662889 time since last opened 0:13:53.433755 time since last button press 3:00:24.571923
+opening door: True hue is on: True button is on True time since last change 1:07:08.122340 time since last opened 0:15:05.893203 time since last button press 3:01:37.031370
+opening door: False hue is on: True button is on True time since last change 1:08:29.937034 time since last opened 0:01:21.814541 time since last button press 3:02:58.846065
+opening door: False hue is on: True button is on True time since last change 2:17:59.867530 time since last opened 1:10:51.745034 time since last button press 4:12:28.776558
+hue off
+opening door: False hue is on: False button is on False time since last change 0:15:54.290759 time since last opened 1:26:46.035966 time since last button press 0:15:54.290801
+hue on
+opening door: False hue is on: True button is on True time since last change 1:13:07.167288 time since last opened 2:39:53.203486 time since last button press 1:13:07.167322
+hue off
+opening door: False hue is on: False button is on False time since last change 0:29:22.615782 time since last opened 3:09:15.819472 time since last button press 0:29:22.615817
+hue on
+opening door: False hue is on: True button is on True time since last change 0:00:02.563347 time since last opened 3:09:18.383005 time since last button press 0:00:02.563380
+hue off
+opening door: False hue is on: False button is on False time since last change 0:00:01.736078 time since last opened 3:09:20.119266 time since last button press 0:00:01.736111
+hue on
+opening door: False hue is on: True button is on True time since last change 0:00:03.071574 time since last opened 3:09:23.191043 time since last button press 0:00:03.071605
+hue off
+opening door: False hue is on: False button is on False time since last change 0:00:02.007088 time since last opened 3:09:25.198314 time since last button press 0:00:02.007120
+hue on
+opening door: False hue is on: True button is on True time since last change 0:00:02.516687 time since last opened 3:09:27.715181 time since last button press 0:00:02.516721
+hue off
+opening door: False hue is on: False button is on False time since last change 0:00:01.652769 time since last opened 3:09:29.368159 time since last button press 0:00:01.652803
+hue on
+opening door: False hue is on: True button is on True time since last change 0:00:02.384546 time since last opened 3:09:31.752887 time since last button press 0:00:02.384577
+hue off
+opening door: False hue is on: False button is on False time since last change 0:07:44.711916 time since last opened 3:17:16.464992 time since last button press 0:07:44.711946
+hue on
+opening door: False hue is on: True button is on True time since last change 0:00:02.618355 time since last opened 3:17:19.083530 time since last button press 0:00:02.618385
+hue off
+opening door: True hue is on: True button is on True time since last change 7:33:48.484009 time since last opened 10:51:07.567766 time since last button press 7:33:48.484038
+hue off
+opening door: False hue is on: True button is on True time since last change 1:16:09.154589 time since last opened 1:16:09.154577 time since last button press 1:16:09.154574
+hue off
+opening door: False hue is on: False button is on False time since last change 0:00:02.022732 time since last opened 1:16:11.178124 time since last button press 0:00:02.022761
+hue on
+opening door: False hue is on: True button is on True time since last change 0:00:03.127723 time since last opened 1:16:14.306028 time since last button press 0:00:03.127754
+hue off
+opening door: False hue is on: False button is on False time since last change 0:00:02.001349 time since last opened 1:16:16.307559 time since last button press 0:00:02.001379
+hue on
+opening door: False hue is on: True button is on True time since last change 0:00:02.089465 time since last opened 1:16:18.397208 time since last button press 0:00:02.089496
+hue off
+opening door: False hue is on: False button is on False time since last change 0:00:02.145525 time since last opened 1:16:20.542921 time since last button press 0:00:02.145552
+hue on
+opening door: False hue is on: True button is on True time since last change 0:22:46.456046 time since last opened 1:39:06.999140 time since last button press 0:22:46.456073
+hue off
+opening door: False hue is on: False button is on False time since last change 0:14:08.958742 time since last opened 1:53:15.958061 time since last button press 0:14:08.958776
+hue on
+opening door: False hue is on: True button is on True time since last change 0:08:42.589939 time since last opened 2:01:58.548201 time since last button press 0:08:42.589971
+hue off
+opening door: False hue is on: False button is on False time since last change 0:04:17.627274 time since last opened 2:06:16.175669 time since last button press 0:04:17.627308
+hue on
+opening door: False hue is on: True button is on True time since last change 0:00:55.081445 time since last opened 2:07:11.257298 time since last button press 0:00:55.081479
+hue off
+opening door: False hue is on: False button is on False time since last change 0:00:01.960809 time since last opened 2:07:13.218304 time since last button press 0:00:01.960840
+hue on
+hue off
+opening door: False hue is on: False button is on False motion: 1 time since last change 1:03:46.417359 time since last opened 1:03:46.417344 time since last button press 1:03:46.417340
+opening door: False hue is on: False button is on False motion: 1 time since last change 1:03:49.471068 time since last opened 1:03:49.471054 time since last button press 1:03:49.471051
+hue on
+opening door: True hue is on: True button is on True motion: 1 time since last change 0:04:56.363279 time since last opened 1:08:45.834524 time since last button press 0:04:56.363310
+opening door: False hue is on: True button is on True motion: 1 time since last change 0:10:26.319155 time since last opened 0:05:29.955710 time since last button press 0:10:26.319187
+opening door: True hue is on: True button is on True motion: 1 time since last change 0:10:27.886561 time since last opened 0:05:31.523112 time since last button press 0:10:27.886587
+opening door: False hue is on: True button is on True motion: 1 time since last change 0:10:29.573493 time since last opened 0:00:01.686791 time since last button press 0:10:29.573526
+hue off
+opening door: True hue is on: False button is on False motion: 1 time since last change 0:00:25.315426 time since last opened 0:00:27.002488 time since last button press 0:10:54.889222
+opening door: False hue is on: False button is on False motion: 1 time since last change 0:02:16.218110 time since last opened 0:01:50.902504 time since last button press 0:12:45.791898
+opening door: True hue is on: False button is on False motion: 0 time since last change 7:44:01.965914 time since last opened 7:43:36.650313 time since last button press 7:54:31.539709
+hue on
+opening door: False hue is on: True button is on True motion: 1 time since last change 0:00:27.484399 time since last opened 0:00:27.484507 time since last button press 7:54:59.024384
+opening door: True hue is on: True button is on True motion: 1 time since last change 0:00:41.586818 time since last opened 0:00:41.586921 time since last button press 7:55:13.126798
+opening door: False hue is on: True button is on True motion: 1 time since last change 0:00:42.425458 time since last opened 0:00:00.838480 time since last button press 7:55:13.965437
+hue off
+opening door: False hue is on: False button is on False motion: 1 time since last change 0:00:02.176709 time since last opened 0:00:03.015453 time since last button press 7:55:16.142411
+hue on
+opening door: True hue is on: True button is on True motion: 1 time since last change 0:32:38.394775 time since last opened 0:32:41.410433 time since last button press 0:32:38.394809
+opening door: False hue is on: True button is on True motion: 1 time since last change 0:32:42.050339 time since last opened 0:00:03.655401 time since last button press 0:32:42.050368
+hue off
+opening door: True hue is on: False button is on False motion: 0 time since last change 0:02:28.046194 time since last opened 0:02:31.701879 time since last button press 0:35:10.096848
+hue on
+opening door: False hue is on: True button is on True motion: 1 time since last change 0:00:05.855888 time since last opened 0:00:05.855999 time since last button press 0:35:15.953014
+opening door: True hue is on: True button is on True motion: 1 time since last change 0:36:44.847000 time since last opened 0:36:44.847110 time since last button press 1:11:54.944124
+opening door: False hue is on: True button is on True motion: 1 time since last change 0:36:47.972141 time since last opened 0:00:03.124988 time since last button press 1:11:58.069267
+hue off
+opening door: False hue is on: False button is on False motion: 1 time since last change 0:00:02.203719 time since last opened 0:00:05.328989 time since last button press 1:12:00.273270
+hue on
+opening door: True hue is on: False button is on False motion: 1 time since last change 1:41:49.866539 time since last opened 1:41:55.195726 time since last button press 1:41:49.866571
+opening door: False hue is on: False button is on False motion: 1 time since last change 1:43:14.022815 time since last opened 0:01:24.156103 time since last button press 1:43:14.022847
+opening door: True hue is on: False button is on False motion: 1 time since last change 2:01:54.312156 time since last opened 0:20:04.445441 time since last button press 2:01:54.312183
+opening door: False hue is on: False button is on False motion: 1 time since last change 2:02:11.321517 time since last opened 0:00:17.009223 time since last button press 2:02:11.321548
+opening door: True hue is on: False button is on False motion: 0 time since last change 2:58:24.715809 time since last opened 0:56:30.403515 time since last button press 2:58:24.715841
+hue on
+opening door: False hue is on: True button is on True motion: 1 time since last change 0:00:03.327300 time since last opened 0:00:03.327408 time since last button press 2:58:28.043406
+opening door: False hue is on: True button is on True motion: 1 time since last change 2:31:58.361310 time since last opened 2:31:58.361493 time since last button press 5:30:23.077498
+hue off
+opening door: False hue is on: True button is on True motion: 1 time since last change 1:00:39.760117 time since last opened 1:00:39.760107 time since last button press 1:00:39.760103
+hue off
+opening door: True hue is on: False button is on False motion: 1 time since last change 8:57:55.654699 time since last opened 9:58:35.415021 time since last button press 8:57:55.654734
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+hue off
+opening door: True hue is on: False button is on False motion: 1 time since last change 1:15:08.894345 time since last opened 1:15:08.894330 time since last button press 1:15:08.894324
+hue on
+opening door: True hue is on: True button is on True motion: 1 time since last change 1:27:06.847710 time since last opened 2:42:15.742224 time since last button press 1:27:06.847736
+hue off
+opening door: True hue is on: False button is on False motion: 1 time since last change 0:21:02.822388 time since last opened 3:03:18.564769 time since last button press 0:21:02.822418
+hue on
+opening door: True hue is on: True button is on True motion: 1 time since last change 0:00:05.029818 time since last opened 3:03:23.594767 time since last button press 0:00:05.029848
+hue off
+opening door: False hue is on: False button is on False motion: 0 time since last change 5:12:27.055054 time since last opened 8:15:50.650003 time since last button press 5:12:27.055081
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+hue off
+hue on
+opening door: True hue is on: True button is on True motion: 1 time since last change 6:43:07.752502 time since last opened 9:46:31.347452 time since last button press 6:43:07.752531
+opening door: True hue is on: True button is on True motion: 0 time since last change 1:00:05.949567 time since last opened 1:00:05.949533 time since last button press 1:00:05.949529
+hue on
+opening door: False hue is on: True button is on True motion: 1 time since last change 1:14:17.684904 time since last opened 1:14:17.685955 time since last button press 2:14:23.635667
+hue on
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+opening door: False hue is on: True button is on True motion: 1 time since last change 0:07:24.686476 time since last opened 1:21:42.373488 time since last button press 2:21:48.323199
+hue off
+opening door: True hue is on: False button is on False motion: 1 time since last change 0:00:01.265135 time since last opened 1:21:43.638796 time since last button press 0:00:01.265166
+opening door: True hue is on: False button is on False motion: 1 time since last change 0:00:02.178788 time since last opened 0:00:00.913486 time since last button press 0:00:02.178816
+hue on
+opening door: False hue is on: True button is on True motion: 1 time since last change 0:00:02.205024 time since last opened 0:00:03.118692 time since last button press 0:00:02.205058
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+no motion detected
+hue off
+hue on

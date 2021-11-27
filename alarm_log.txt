@@ -58,3 +58,93 @@ running volume 3
 running volume 40
 running hue on
 hue on
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 3:59:55.770488
+running volume 1
+running music
+running volume 2
+running volume 3
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 2:59:50.975061
+running volume 1
+running music
+running volume 2
+running volume 3
+running volume 40
+running hue on
+hue on
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 6:09:50.320647
+running volume 1
+running music
+running volume 2
+running volume 3
+running volume 40
+running hue on
+hue on
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 2:19:50.646569
+running volume 1
+running music
+running volume 2
+running volume 3
+running volume 40
+running hue on
+hue on
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Looks like school started in the past. Aborting
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Looks like school started in the past. Aborting
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 3:59:50.724748
+running volume 1
+running music
+running volume 2
+running volume 3
+running volume 40
+running hue on
+hue on
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 3:59:49.566313
+running volume 1
+running music
+running volume 2
+running volume 3
+running volume 40
+running hue on
+hue on
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 3:59:51.342384
+running volume 1
+running music
+running volume 2
+running volume 3
+running volume 40
+running hue on
+hue on
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 6:09:51.600096
+running volume 1
+running music
+running volume 2
+running volume 3
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 2:19:51.321734
+running volume 1
+running music
+running volume 2
+running volume 3
+running volume 40
+running hue on
+hue on

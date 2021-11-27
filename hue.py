@@ -2,6 +2,8 @@ from hue_api import HueApi
 from time import sleep
 from datetime import datetime, timedelta, time
 import requests
+import uuid
+from threading import Thread
 
 from sensor import sensor as s
 
@@ -49,18 +51,19 @@ def hue_off():
 if __name__ == '__main__':
     import sys
 
-    hue_off()
-
     curr_door = s.door_sensor()
     curr_button = s.button_sensor()
     last_change = datetime.now() - timedelta(hours=1)
     last_opened = datetime.now() - timedelta(hours=1)
     last_button_press = datetime.now() - timedelta(hours=1)
+    outside = False
+    curr_async_id = uuid.uuid4()
 
     def print_state():
         print('opening door:', curr_door == 0,
               'hue is on:', hue_is_on(),
               'button is on', s.button_is_on,
+              'motion:', s.motion_sensor(),
               'time since last change', datetime.now() - last_change,
               'time since last opened', datetime.now() - last_opened,
               'time since last button press', datetime.now() - last_button_press)
@@ -82,15 +85,40 @@ if __name__ == '__main__':
         else:
             hue_on()
 
-    def on_door_update():
-        global curr_door, curr_button, last_change, last_opened, last_button_press
+    def check_motion():
+        global outside
 
+        curr_id = curr_async_id
+
+        sleep(10)
+
+        for _ in range(120):
+            sleep(1)
+
+            if s.motion_sensor() == 1: return
+            
+            if curr_id != curr_async_id: return
+
+            print('no motion detected')
+
+        outside = True
+        hue_off() 
+
+    Thread(target=check_motion).start()
+
+    def bad_hours():
         tomorrow = datetime.now() + timedelta(days=1)
         time_until_end_of_day = datetime.combine(tomorrow, time.min) - datetime.now()
         time_since_start_of_day = timedelta(days=1) - time_until_end_of_day
 
-        if time_until_end_of_day < timedelta(hours=2, minutes=30): return
-        if time_since_start_of_day < timedelta(hours=6): return
+        if time_until_end_of_day < timedelta(hours=2): return True
+        if time_since_start_of_day < timedelta(hours=6): return True
+
+        return False
+
+    def on_door_update():
+        global curr_door, curr_button, last_change, last_opened, last_button_press
+        global curr_async_id
 
         curr_door = s.door_sensor()
         time_since_last_change = datetime.now() - last_change
@@ -104,31 +132,41 @@ if __name__ == '__main__':
         if opening_door:
             last_opened = datetime.now()
 
-        if time_since_last_button_press < timedelta(seconds=60):
-            return
+        curr_async_id = uuid.uuid4()
+        Thread(target=check_motion).start()
 
-        if (opening_door or time_since_last_opened > timedelta(seconds=60)) and not hue_is_on():
+        if time_since_last_button_press < timedelta(seconds=60): return
+
+        if time_since_last_change < timedelta(seconds=10): return
+
+        if opening_door and s.motion_sensor() == 0:
             last_change = datetime.now()
+            outside = False
             hue_on()
 
-        if (not opening_door and hue_is_on() and
-                time_since_last_change > timedelta(seconds=60) and
-                time_since_last_opened < timedelta(seconds=10)):
+        if not opening_door and time_since_last_opened > timedelta(seconds=10) and s.motion_sensor() == 1:
             last_change = datetime.now()
-            hue_off()
+            outside = False
+            hue_on()
 
     i = 0
     delay = 0.05
     while True:
         sleep(delay)
 
-        if i % (1 // delay) == 0:
+        if i % (2 // delay) == 0:
             s.button_set_on(hue_is_on())
+
+        if curr_button != s.button_sensor():
+            on_button_update()
+
+        if bad_hours(): continue
 
         if curr_door != s.door_sensor():
             on_door_update()
 
-        if curr_button != s.button_sensor():
-            on_button_update()
+        if outside and s.motion_sensor() == 1:
+            outside = False
+            hue_on()
 
         i += 1

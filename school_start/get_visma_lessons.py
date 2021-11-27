@@ -36,15 +36,18 @@ def get_visma_lessons():
             EC.presence_of_element_located((By.ID, id)))
 
     driver.get(school_url)
+    print('driving the school url')
 
     wait_for_element_with_id('login-with-feide-button')
 
     driver.find_element_by_id('login-with-feide-button').click()
+    print('clicking sign in with feide')
 
     wait_for_element_with_id('feide:login')
 
     driver.find_element_by_id('username').send_keys(login_data.name)
     driver.find_element_by_id('password').send_keys(login_data.password)
+    print('typing in username and password')
 
     driver.find_element_by_name('f').submit()
 
@@ -52,6 +55,7 @@ def get_visma_lessons():
 
     url = f'{school_url}/control/timetablev2/learner/{login_data.learnerId}/fetch/ALL/0/current?forWeek={tomorrow_string}'
 
+    print('fetching from the school api')
     driver.get(url)
 
     content = driver.page_source[84 : -20]
