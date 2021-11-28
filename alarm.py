@@ -8,6 +8,8 @@ try:
     from sensor import sensor
     from action import action as a
     from settings import settings
+    
+    from weather.weather import weather
 
     speaker.notification()
 
@@ -55,6 +57,8 @@ try:
         sleep(1)
 
     a.clean_up()
+
+    subprocess.run(['espeak', weather()])
 
     subprocess.run(['sudo', 'reboot'])
 
