@@ -14,7 +14,7 @@ def deserialize(key, json, cls, allowed_types, fallback):
     try:
         return fallback(json[key])
     except Exception as e:
-        raise Exception(f'Was not able to deserialize {key} ({json[key]}). Error: ({e})')
+        raise ValueError(f'Was not able to deserialize {key} ({json[key]}). Error: ({e})')
 
 @dataclass(frozen=True, order=True)
 class Settings:
@@ -52,21 +52,18 @@ class Settings:
     def validate(self):
         self.check_school_start()
 
-_settings = Settings()
-
-if os.path.exists('settings.pkl'):
-    with open('settings.pkl', 'rb') as s:
-        settings_dict = pickle.load(s)
-        _settings = Settings.from_dict(settings_dict)
-
 def settings():
-    return Settings.fromSettings(_settings)
+    if os.path.exists('settings.pkl'):
+        with open('settings.pkl', 'rb') as s:
+            settings_dict = pickle.load(s)
+            return Settings.from_dict(settings_dict)
+
+    with open('settings.pkl', 'wb') as s:
+        pickle.dump(s, Settings().to_dict())
+        return Settings()
 
 def update(**kwargs):
-    global _settings
-
-    settings_dict = _settings.to_dict()
-
+    settings_dict = settings().to_dict()
     not_allowed_keys = [key for key in kwargs.keys() if key not in settings_dict.keys()]
     if len(not_allowed_keys) > 0:
         raise ValueError(f'{not_allowed_keys} are not allowed keys')
@@ -76,11 +73,10 @@ def update(**kwargs):
 
     result = Settings.from_dict(settings_dict)
     result.validate()
-    _settings = result
 
     path = os.path.dirname(os.path.realpath(__file__))
     with open(f'{path}/settings.pkl', 'wb') as s:
-        pickle.dump(_settings.to_dict(), s)
+        pickle.dump(result.to_dict(), s)
 
     print('current settings:')
     print(settings())

@@ -99,8 +99,7 @@ if __name__ == '__main__':
             
             if curr_id != curr_async_id: return
 
-            print('no motion detected')
-
+        print('Turning off the lights due to no motion detected')
         outside = True
         hue_off() 
 

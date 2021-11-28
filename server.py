@@ -10,10 +10,13 @@ def get():
 @app.route('/', methods=['POST'])
 def post():
     try:
+        if request.json is None:
+            raise TypeError('request body must not be None')
+
         update(**request.json)
         return jsonify(settings().to_dict())
     except Exception as e:
-        return str(e)
+        return str(e), 500
 
 
 if __name__ == '__main__':

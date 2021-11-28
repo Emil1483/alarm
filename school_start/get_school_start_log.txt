@@ -22,3 +22,10 @@ school starts at 22/11/2021 10:00
 school starts at 23/11/2021 08:20
 school starts at 25/11/2021 12:10
 school starts at 26/11/2021 08:20
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+looks like there are no lessons
+current settings:
+Settings(school_start=None)
