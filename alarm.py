@@ -11,7 +11,7 @@ try:
 
     speaker.notification()
 
-    start_time = settings()['school_start']
+    start_time = settings().school_start
 
     if start_time is None:
         print('School start is set to None. Aborting')

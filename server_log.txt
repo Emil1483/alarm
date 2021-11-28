@@ -22,3 +22,13 @@ current settings:
 Settings(school_start=datetime.datetime(2021, 11, 28, 8, 20))
 current settings:
 Settings(school_start=datetime.datetime(2021, 11, 28, 11, 0))
+ * Serving Flask app "server" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Serving Flask app "server" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on

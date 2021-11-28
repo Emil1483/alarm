@@ -151,3 +151,6 @@ hue on
 pygame 1.9.4.post1
 Hello from the pygame community. https://www.pygame.org/contribute.html
 <class 'TypeError'> 'Settings' object is not subscriptable
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+<class 'TypeError'> 'Settings' object is not subscriptable
