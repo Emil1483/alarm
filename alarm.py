@@ -61,7 +61,8 @@ def main(test=False):
 
     subprocess.run(['espeak', weather()])
 
-    subprocess.run(['sudo', 'reboot'])
+    if not test:
+        subprocess.run(['sudo', 'reboot'])
 
 
 if __name__ == '__main__':
