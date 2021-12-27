@@ -1,34 +1,34 @@
-try:
+import subprocess
+import sys
+from datetime import datetime, timedelta
+from time import sleep
 
-    from time import sleep
-    from datetime import datetime, timedelta
-    import subprocess
-    import sys
+from action import action as a
+from sensor import sensor
+from settings import settings
+from speaker import speaker
+from weather.weather import weather
 
-    from speaker import speaker
-    from sensor import sensor
-    from action import action as a
-    from settings import settings
-    
-    from weather.weather import weather
+
+def main(test=False):
 
     speaker.notification()
 
     start_time = settings().school_start
     max_duration = max(action.duration for action in a.actions)
 
+    if test:
+        start_time = datetime.now() + max_duration
+
     if start_time is None:
         print('School start is set to None. Aborting')
         a.clean_up()
         quit()
 
-    if '--test' in sys.argv:
-        start_time = datetime.now() + max_duration
-
     duration = start_time - datetime.now()
 
     if duration > timedelta(hours=12):
-        print(f'Next alarm at {time} is too long to wait. Aborting')
+        print(f'Next alarm at {start_time} is too long to wait. Aborting')
         a.clean_up()
         quit()
 
@@ -63,7 +63,11 @@ try:
 
     subprocess.run(['sudo', 'reboot'])
 
-except Exception as e:
-    a.clean_up()
-    print(type(e), e)
-    raise e
+
+if __name__ == '__main__':
+    try:
+        main(test='--test' in sys.argv)
+    except Exception as e:
+        a.clean_up()
+        print(type(e), e)
+        raise e

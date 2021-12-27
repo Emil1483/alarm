@@ -1,10 +1,10 @@
-from hue_api import HueApi
-from time import sleep
-from datetime import datetime, timedelta, time
-import requests
 import uuid
+from datetime import datetime, time, timedelta
 from threading import Thread
-import sys
+from time import sleep
+
+import requests
+from hue_api import HueApi
 
 from sensor import sensor as s
 
@@ -71,7 +71,7 @@ def bad_hours():
     return False
 
 def on_door_update():
-    global curr_door, curr_button, last_change, last_opened, last_button_press
+    global curr_door, curr_button, last_change, last_opened, last_button_press, outside
     global curr_async_id
 
     curr_door = s.door_sensor()

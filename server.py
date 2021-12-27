@@ -1,6 +1,10 @@
-from flask import Flask, jsonify, request
-from settings import settings, update 
 import subprocess
+from threading import Thread
+
+from flask import Flask, jsonify, request
+
+import alarm
+from settings import settings, update
 
 app = Flask(__name__)
 
@@ -33,6 +37,22 @@ def post():
     except Exception as e:
         return str(e), 500
 
+@app.route('/test', method=['POST'])
+def test():
+    try:
+        f = lambda : alarm.main(test=True)
+        Thread(target=f).start()
+        return 'Started alarm test'
+    except Exception as e:
+        return str(e), 500
+
+@app.route('/start', method=['POST'])
+def start():
+    try:
+        Thread(target=alarm.main).start()
+        return 'Started alarm'
+    except Exception as e:
+        return str(e), 500
 
 if __name__ == '__main__':
     app.run('0.0.0.0', port=80, debug=True)
