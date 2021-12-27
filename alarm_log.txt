@@ -154,3 +154,251 @@ Hello from the pygame community. https://www.pygame.org/contribute.html
 pygame 1.9.4.post1
 Hello from the pygame community. https://www.pygame.org/contribute.html
 <class 'TypeError'> 'Settings' object is not subscriptable
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 3:59:56.272984
+running volume 1
+running music
+running volume 2
+running volume 3
+running volume 40
+running hue on
+hue on
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 3:59:49.937780
+running volume 1
+running music
+running volume 2
+running volume 3
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 5:59:50.533257
+running volume 1
+running music
+running volume 2
+running volume 3
+running volume 40
+running hue on
+hue on
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 5:29:49.785918
+running volume 1
+running music
+running volume 2
+running volume 3
+running volume 40
+running hue on
+hue on
+running volume 100
+running old alarm
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 2:19:51.958318
+running volume 1
+running music
+running volume 2
+running volume 3
+running volume 40
+running hue on
+hue on
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School start is set to None. Aborting
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 5:59:50.509823
+running volume 1
+running music
+running volume 2
+running volume 3
+running volume 40
+running hue on
+hue on
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 3:59:50.058769
+running volume 1
+running music
+running volume 2
+running volume 3
+running volume 40
+running hue on
+hue on
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 3:59:50.423067
+running volume 1
+running music
+running volume 2
+running volume 3
+running volume 40
+running hue on
+hue on
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 5:29:49.803321
+running volume 1
+running music
+running volume 2
+running volume 3
+running volume 40
+running hue on
+hue on
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 6:09:50.337249
+running volume 1
+running music
+running volume 2
+running volume 3
+running volume 40
+running hue on
+hue on
+running volume 100
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 2:19:49.891273
+running volume 1
+running music
+running volume 2
+running volume 3
+running volume 40
+running hue on
+hue on
+running volume 100
+running old alarm
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 6:59:50.700617
+running volume 1
+running music
+running volume 2
+running volume 3
+running volume 40
+running hue on
+hue on
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School start is set to None. Aborting
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 3:59:56.987582
+running volume 2
+running music
+running volume 3
+running volume 5
+running volume 7.5
+running volume 40
+running hue on
+hue on
+running volume 100
+running old alarm
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 3:59:49.662667
+running volume 2
+running music
+running volume 3
+running volume 5
+running volume 7.5
+running volume 40
+running hue on
+hue on
+running volume 100
+running old alarm
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 3:59:56.319281
+running volume 10
+running music
+running volume 15
+running volume 20
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 3:19:56.825201
+running volume 10
+running music
+running volume 15
+running volume 40
+running hue on
+hue on
+running volume 60
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 2:19:49.782553
+running music
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 3:44:49.443742
+running volume 10
+running music
+running volume 15
+running volume 20
+running hue on
+hue on
+running volume 60
+running old alarm
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 5:59:50.184321
+running volume 10
+running music
+running volume 15
+running volume 20
+running hue on
+hue on
+running volume 60
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 3:59:50.196484
+running volume 10
+running music
+running volume 15
+running volume 20
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 2:19:50.839189
+running volume 10
+running music
+running volume 15
+running volume 20
+running hue on
+hue on
+running volume 60
+running old alarm
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 3:59:49.481145
+running volume 10
+running music
+running volume 15
+running volume 20
+running hue on
+hue on
+running volume 60
+running old alarm
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School start is set to None. Aborting
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School start is set to None. Aborting
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School start is set to None. Aborting
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School start is set to None. Aborting
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+School starts in 5:59:48.884216
+running volume 10
+running music
+running volume 15
+running volume 20
+running hue on
+hue on
+running volume 60
+running old alarm

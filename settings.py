@@ -1,4 +1,4 @@
-import pickle
+import json
 import os
 from datetime import datetime, date
 from dataclasses import dataclass, asdict
@@ -52,14 +52,17 @@ class Settings:
     def validate(self):
         self.check_school_start()
 
+def path():
+    return os.path.dirname(os.path.realpath(__file__))
+
 def settings():
-    if os.path.exists('settings.pkl'):
-        with open('settings.pkl', 'rb') as s:
-            settings_dict = pickle.load(s)
+    if os.path.exists(f'{path()}/settings.json'):
+        with open(f'{path()}/settings.json', 'r') as s:
+            settings_dict = json.load(s)
             return Settings.from_dict(settings_dict)
 
-    with open('settings.pkl', 'wb') as s:
-        pickle.dump(s, Settings().to_dict())
+    with open(f'{path()}/settings.json', 'w') as s:
+        json.dump(Settings().to_dict(), s, indent=4)
         return Settings()
 
 def update(**kwargs):
@@ -74,9 +77,8 @@ def update(**kwargs):
     result = Settings.from_dict(settings_dict)
     result.validate()
 
-    path = os.path.dirname(os.path.realpath(__file__))
-    with open(f'{path}/settings.pkl', 'wb') as s:
-        pickle.dump(result.to_dict(), s)
+    with open(f'{path()}/settings.json', 'w') as s:
+        json.dump(result.to_dict(), s, indent=4)
 
     print('current settings:')
     print(settings())

@@ -1,7 +1,22 @@
 from flask import Flask, jsonify, request
 from settings import settings, update 
+import subprocess
 
 app = Flask(__name__)
+
+@app.route('/say', methods=['POST'])
+def say():
+    to_say = request.data
+    if len(to_say) == 0:
+        return 'You must say something', 400
+
+    limit = 100
+    if len(to_say) > limit:
+        return f'You are trying to say too much. The limit is {limit} characters', 400
+
+    subprocess.run(['espeak', request.data])
+
+    return f'You did it. You said {to_say}'
 
 @app.route('/', methods=['GET'])
 def get():

@@ -3,6 +3,7 @@ try:
     from time import sleep
     from datetime import datetime, timedelta
     import subprocess
+    import sys
 
     from speaker import speaker
     from sensor import sensor
@@ -14,13 +15,15 @@ try:
     speaker.notification()
 
     start_time = settings().school_start
+    max_duration = max(action.duration for action in a.actions)
 
     if start_time is None:
         print('School start is set to None. Aborting')
         a.clean_up()
         quit()
 
-    #start_time = datetime.now() + timedelta(minutes=90)
+    if '--test' in sys.argv:
+        start_time = datetime.now() + max_duration
 
     duration = start_time - datetime.now()
 
@@ -35,8 +38,6 @@ try:
         quit()
 
     print(f'School starts in {duration}')
-
-    max_duration = max(action.duration for action in a.actions)
 
     sleep_time = start_time - datetime.now() - max_duration
     sleep_time_seconds = sleep_time.total_seconds()

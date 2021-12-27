@@ -29,3 +29,210 @@ fetching from the school api
 looks like there are no lessons
 current settings:
 Settings(school_start=None)
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+school starts at 29/11/2021 10:00
+file must have a 'write' attribute
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+school starts at 30/11/2021 10:00
+current settings:
+Settings(school_start=datetime.datetime(2021, 11, 30, 10, 0))
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+looks like there are no lessons
+current settings:
+Settings(school_start=None)
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+school starts at 02/12/2021 12:10
+current settings:
+Settings(school_start=datetime.datetime(2021, 12, 2, 12, 10))
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+school starts at 03/12/2021 08:20
+current settings:
+Settings(school_start=datetime.datetime(2021, 12, 3, 8, 20))
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+looks like there are no lessons
+current settings:
+Settings(school_start=None)
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+looks like there are no lessons
+current settings:
+Settings(school_start=None)
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+school starts at 06/12/2021 10:00
+current settings:
+Settings(school_start=datetime.datetime(2021, 12, 6, 10, 0))
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+school starts at 07/12/2021 08:20
+current settings:
+Settings(school_start=datetime.datetime(2021, 12, 7, 8, 20))
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+looks like there are no lessons
+current settings:
+Settings(school_start=None)
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+school starts at 09/12/2021 12:10
+current settings:
+Settings(school_start=datetime.datetime(2021, 12, 9, 12, 10))
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+school starts at 10/12/2021 08:20
+current settings:
+Settings(school_start=datetime.datetime(2021, 12, 10, 8, 20))
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+looks like there are no lessons
+current settings:
+Settings(school_start=None)
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+looks like there are no lessons
+current settings:
+Settings(school_start=None)
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+school starts at 13/12/2021 10:00
+current settings:
+Settings(school_start=datetime.datetime(2021, 12, 13, 10, 0))
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+school starts at 14/12/2021 10:00
+current settings:
+Settings(school_start=datetime.datetime(2021, 12, 14, 10, 0))
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+school starts at 15/12/2021 10:00
+current settings:
+Settings(school_start=datetime.datetime(2021, 12, 15, 10, 0))
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+school starts at 16/12/2021 08:20
+current settings:
+Settings(school_start=datetime.datetime(2021, 12, 16, 8, 20))
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+school starts at 17/12/2021 08:20
+current settings:
+Settings(school_start=datetime.datetime(2021, 12, 17, 8, 20))
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+looks like there are no lessons
+current settings:
+Settings(school_start=None)
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+looks like there are no lessons
+current settings:
+Settings(school_start=None)
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+school starts at 20/12/2021 10:00
+current settings:
+Settings(school_start=datetime.datetime(2021, 12, 20, 10, 0))
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+school starts at 21/12/2021 08:20
+current settings:
+Settings(school_start=datetime.datetime(2021, 12, 21, 8, 20))
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+looks like there are no lessons
+current settings:
+Settings(school_start=None)
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+looks like there are no lessons
+current settings:
+Settings(school_start=None)
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+looks like there are no lessons
+current settings:
+Settings(school_start=None)
+driving the school url
+clicking sign in with feide
+typing in username and password
+<class 'selenium.common.exceptions.TimeoutException'> Message: 
+
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+looks like there are no lessons
+current settings:
+Settings(school_start=None)
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+looks like there are no lessons
+current settings:
+Settings(school_start=None)
+driving the school url
+clicking sign in with feide
+typing in username and password
+fetching from the school api
+looks like there are no lessons
+current settings:
+Settings(school_start=None)

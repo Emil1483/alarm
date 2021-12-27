@@ -33,4 +33,4 @@ try:
     update(school_start=result)
 
 except Exception as e:
-    print(e)
+    print(type(e), e)
